@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class PlayerMovement : MonoBehaviour
     private float LastScratch;
     public int Health;
     public int Damage;
+    float xInicial, yInicial;
 
     // Start is called before the first frame update
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        xInicial = transform.position.x;
+        yInicial = transform.position.y;
     }
 
     // Update is called once per frame
@@ -86,11 +90,18 @@ public class PlayerMovement : MonoBehaviour
 
         barraDeVida = FindObjectOfType<BarraDeVida>();
 
-        barraDeVida.vidaActual -= (100/Damage);
+        barraDeVida.vidaActual -= Damage;
         barraDeVida.Update();
 
-        if (Health == 0) Destroy(gameObject);
+        if (Health == 0){
+            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        }
     }
+
+    /*public void FallPlayer(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+    }*/
 
 
 }

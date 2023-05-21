@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyScriptExtreme : MonoBehaviour
 {
@@ -53,6 +55,9 @@ public class EnemyScriptExtreme : MonoBehaviour
         //Debug.Log("Health Enemy: " + Health);
         Health -= 1;
         
-        if (Health == 0)  Destroy(gameObject);
+        if (Health == 0){
+            Destroy(gameObject);
+             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
+        }
     }
 }
