@@ -6,6 +6,7 @@ public class FishScript : MonoBehaviour
 {
     public BarraDeVida barraDeVida;
     public int Pescado;
+    public AudioClip Sound;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,7 +22,7 @@ public class FishScript : MonoBehaviour
                  player.Health += Pescado;
 
                  barraDeVida = FindObjectOfType<BarraDeVida>();
-
+                 Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
                  barraDeVida.vidaActual += Pescado;
                  barraDeVida.Update();
 
@@ -31,6 +32,7 @@ public class FishScript : MonoBehaviour
                 barraDeVida.vidaActual = 100;
                 barraDeVida.Update();
                 Destroy(gameObject);
+                Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
             }
         }
 

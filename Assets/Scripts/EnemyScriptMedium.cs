@@ -6,14 +6,14 @@ public class EnemyScriptMedium : MonoBehaviour
 {
     public GameObject Player;
     public GameObject ScratchPrefab;
-    
+    public AudioClip Sound;
     public int Health;
     private float LastScratch;
 
     // Update is called once per frame
     private void Update()
     {
-        //if (Player ==  null) return;
+        if (Player ==  null) return;
 
         Vector3 direction = Player.transform.position - transform.position;
         if (direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -30,15 +30,7 @@ public class EnemyScriptMedium : MonoBehaviour
 
     private void Scratch()
     {
-        /*
-        Vector3 direction;
-        if (transform.localScale.x == -1.0f) direction = Vector3.left;
-        else direction = Vector3.right;
 
-
-        GameObject scratch = Instantiate(ScratchPrefab, transform.position + direction * 0.1f, Quaternion.identity);
-        scratch.GetComponent<ScratchScript>().SetDirection(direction);
-        */
         Vector3 direction;
         if (transform.localScale.x == -1.0f) direction = Vector3.left;
         else direction = Vector3.right;
@@ -50,9 +42,16 @@ public class EnemyScriptMedium : MonoBehaviour
 
     public void Hit()
     {
-        //Debug.Log("Health Enemy: " + Health);
+
         Health -= 1;
         
-        if (Health == 0)  Destroy(gameObject);
+        if (Health == 0){  
+             Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+             Destroy(gameObject);
+        }
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

@@ -6,7 +6,7 @@ public class EnemyScriptHard : MonoBehaviour
 {
     public GameObject Player;
     public GameObject ScratchPrefab;
-    
+    public AudioClip Sound;
     public int Health;
     private float LastScratch;
 
@@ -53,6 +53,13 @@ public class EnemyScriptHard : MonoBehaviour
         //Debug.Log("Health Enemy: " + Health);
         Health -= 1;
         
-        if (Health == 0)  Destroy(gameObject);
+        if (Health == 0){  
+             Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+             Destroy(gameObject);
+        }
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

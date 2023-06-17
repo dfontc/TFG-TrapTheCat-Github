@@ -8,9 +8,11 @@ public class EnemyScriptExtreme : MonoBehaviour
 {
     public GameObject Player;
     public GameObject ScratchPrefab;
-    
+    public GameObject TreeWall;
+    public AudioClip Sound;
     public int Health;
     private float LastScratch;
+
 
     // Update is called once per frame
     private void Update()
@@ -56,8 +58,19 @@ public class EnemyScriptExtreme : MonoBehaviour
         Health -= 1;
         
         if (Health == 0){
+           Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
             Destroy(gameObject);
-             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
+            TreeWall.SetActive(false);
         }
+           // treewall.Update();
+
+           //GameObject(Tree);
+           // Destroy(tree.gameObject);
+             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+        TreeWall.SetActive(false);
     }
 }

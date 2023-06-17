@@ -6,7 +6,7 @@ public class EnemyScriptEasy : MonoBehaviour
 {
     public GameObject Player;
     public GameObject ScratchPrefab;
-    
+    public AudioClip Sound;
     public int Health;
     private float LastScratch;
 
@@ -21,7 +21,7 @@ public class EnemyScriptEasy : MonoBehaviour
         
         float distance = Mathf.Abs(Player.transform.position.x - transform.position.x);
 
-        if (distance < 0.8f && Time.time > LastScratch + 2f)
+        if (distance < 1f && Time.time > LastScratch + 2f)
         {
             Scratch();
             LastScratch = Time.time;
@@ -30,15 +30,7 @@ public class EnemyScriptEasy : MonoBehaviour
 
     private void Scratch()
     {
-        /*
-        Vector3 direction;
-        if (transform.localScale.x == -1.0f) direction = Vector3.left;
-        else direction = Vector3.right;
 
-
-        GameObject scratch = Instantiate(ScratchPrefab, transform.position + direction * 0.1f, Quaternion.identity);
-        scratch.GetComponent<ScratchScript>().SetDirection(direction);
-        */
         Vector3 direction;
         if (transform.localScale.x == -1.0f) direction = Vector3.left;
         else direction = Vector3.right;
@@ -50,9 +42,18 @@ public class EnemyScriptEasy : MonoBehaviour
 
     public void Hit()
     {
-        //Debug.Log("Health Enemy: " + Health);
+
         Health -= 1;
         
-        if (Health == 0)  Destroy(gameObject);
+        if (Health == 0){  
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+
+             Destroy(gameObject);
+        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

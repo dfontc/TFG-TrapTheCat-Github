@@ -8,6 +8,9 @@ public class MenuPausa : MonoBehaviour
     //[SerializeField] private GameObject botonPausa;
 
     public GameObject botonPausa;
+    public GameObject BackButton;
+    public GameObject RestartButton;
+    public GameObject HomeButton;
 
     //[SerializeField] private GameObject menuPausa;
 
@@ -17,15 +20,18 @@ public class MenuPausa : MonoBehaviour
     {
         Time.timeScale = 0f;
 
-        //botonPausa.SetActive(false);
+        botonPausa.SetActive(false);
         menuPausa.SetActive(true);
+        BackButton.SetActive(true);
+        RestartButton.SetActive(true);
+        HomeButton.SetActive(true);
 
-        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        /*AudioSource[] audios = FindObjectsOfType<AudioSource>();
 
         foreach (AudioSource a in audios)
         {
             a.Pause();
-        }
+        }*/
     }
 
     public void Reanudar()
@@ -34,13 +40,17 @@ public class MenuPausa : MonoBehaviour
 
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
+        BackButton.SetActive(false);
+        RestartButton.SetActive(false);
+        HomeButton.SetActive(false);
 
-        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        /*AudioSource[] audios = FindObjectsOfType<AudioSource>();
 
         foreach (AudioSource a in audios)
         {
             a.Play();
-        }
+        }*/
+
 
     }
 

@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 418
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115322c545b4e614993f3158a1e04351
+      internalID: -504659098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 806
+        width: 388
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e6f053436ad2a48a0989e3cf683bd1
+      internalID: -1911929729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_2
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 806
+        width: 362
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9c8f148fe518947b8476c783ef4e51
+      internalID: -596843051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_3
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 806
+        width: 359
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7da923703bf17418333c71ba0e4024
+      internalID: -644168623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 375
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf27a654856142340bf3179714e0872a
+      internalID: 1611103822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 409
+        width: 397
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102590c66dd21514fb8612342caf4a62
+      internalID: -490637854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_6
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 398
+        width: 418
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b21c3cb0f4547d49a479182c3ceeb0d
+      internalID: 174219734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_7
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 409
+        width: 395
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a201f2d6d4f829e4c9d4ebf3a3dc68a3
+      internalID: 1513838089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 370
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d40ad0acfffebd45982b8ead6763e90
+      internalID: -1571335282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 12
+        width: 354
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18373fc46935ce546bbd1cf56c40d43a
+      internalID: 982192275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_10
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 12
+        width: 367
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3553b5c94cd5e1344bbb6995e1d4e913
+      internalID: 694336537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __pink_cartoon_fish_01_swim_11
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 12
+        width: 392
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9cd4c1241120045a2fbd11d692ac6a
+      internalID: -1116838209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __pink_cartoon_fish_01_swim_0: -504659098
+      __pink_cartoon_fish_01_swim_1: -1911929729
+      __pink_cartoon_fish_01_swim_10: 694336537
+      __pink_cartoon_fish_01_swim_11: -1116838209
+      __pink_cartoon_fish_01_swim_2: -596843051
+      __pink_cartoon_fish_01_swim_3: -644168623
+      __pink_cartoon_fish_01_swim_4: 1611103822
+      __pink_cartoon_fish_01_swim_5: -490637854
+      __pink_cartoon_fish_01_swim_6: 174219734
+      __pink_cartoon_fish_01_swim_7: 1513838089
+      __pink_cartoon_fish_01_swim_8: -1571335282
+      __pink_cartoon_fish_01_swim_9: 982192275
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

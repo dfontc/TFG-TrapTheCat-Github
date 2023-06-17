@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float JumpForce;
     public GameObject ScratchPrefab;
     public BarraDeVida barraDeVida; 
-    
+    public AudioClip Sound;
     private Rigidbody2D Rigidbody2D;
     private Animator Animator;
     private float Horizontal;
@@ -17,7 +17,14 @@ public class PlayerMovement : MonoBehaviour
     private float LastScratch;
     public int Health;
     public int Damage;
+    //public bool saltoExtra = false;
+    public int jumpChanges;
+    private int startJumpChanges;
     float xInicial, yInicial;
+
+    //private bool isPowerUpCow = false;
+    public CowScript cowScript;
+    public MilkTimer milkTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         Animator = GetComponent<Animator>();
         xInicial = transform.position.x;
         yInicial = transform.position.y;
+        startJumpChanges = jumpChanges;
+
     }
 
     // Update is called once per frame
@@ -38,26 +47,27 @@ public class PlayerMovement : MonoBehaviour
 
         Animator.SetBool("running", Horizontal != 0.0f);
 
-        //Debug.DrawRay(transform.position, Vector3.down * 0.1f, Color.red);
         if (Physics2D.Raycast(transform.position, Vector3.down, 0.1f))
         {
             Grounded = true;
+            jumpChanges = startJumpChanges;
         }
         else Grounded = false;
-
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && Grounded)
+        
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && (Grounded || (jumpChanges  > 0 && cowScript.isPowerUp  && milkTimer.timer > 1)))
         {
             Jump();
+            jumpChanges --;
+
         }
 
         //Scratch
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Debug.Log("Entra de scratch?");
+
             Scratch();
-            //Debug.Log("Sale de scratch?");
             LastScratch = Time.time;
-            //Destroy(gameObject);
+
         }
 
     }
@@ -78,8 +88,6 @@ public class PlayerMovement : MonoBehaviour
         if (transform.localScale.x == -1.0f) direction = Vector3.left;
         else direction = Vector3.right;
 
-        //Debug.Log("Direction: " + direction);
-        //Debug.Log("Transform.position: " + transform.position);
         GameObject scratch = Instantiate(ScratchPrefab, transform.position + direction * 0.1f, Quaternion.identity);
         scratch.GetComponent<ScratchScript>().SetDirection(direction);
     }
@@ -89,20 +97,21 @@ public class PlayerMovement : MonoBehaviour
         Health -= Damage;
 
         barraDeVida = FindObjectOfType<BarraDeVida>();
+      
 
         barraDeVida.vidaActual -= Damage;
         barraDeVida.Update();
-
-        if (Health == 0){
+        
+        Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+        if (Health <= 0){
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         }
     }
+     
 
-    /*public void FallPlayer(){
+    public void FallPlayer(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
-    }*/
-
-
+    }
 }
 

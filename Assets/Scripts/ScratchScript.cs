@@ -34,21 +34,7 @@ public class ScratchScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*Debug.Log("Entro al triggerenter2d");
 
-        EnemyScript enemy = other.GetComponent<EnemyScript>();
-        PlayerMovement player = other.GetComponent<PlayerMovement>();
-        Debug.Log("Enemy: " + enemy);
-        Debug.Log("Player: " + player);
-        if (enemy != null)
-        {
-            enemy.Hit();
-        }
-        if (player != null)
-        {
-            player.Hit();
-        }
-        DestroyScratch();*/
         PlayerMovement player = collision.collider.GetComponent<PlayerMovement>();
         EnemyScriptEasy enemyEasy = collision.collider.GetComponent<EnemyScriptEasy>();
         EnemyScriptMedium enemyMedium = collision.collider.GetComponent<EnemyScriptMedium>();

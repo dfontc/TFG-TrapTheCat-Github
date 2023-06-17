@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 418
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251b7ab9bdf2fd04a9255b1eea15b780
+      internalID: -471960619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 806
+        width: 388
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb5f7b7c196f784d8e342283565430f
+      internalID: -833946057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_2
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 806
+        width: 362
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd824b9a59fa6e4caff5a4d7280332e
+      internalID: 1284805937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_3
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 806
+        width: 359
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92261096175fbc043a3c4f0881fd40f1
+      internalID: -474323885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 375
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7fff4fedb9843429f0598527d67d11
+      internalID: -1611251656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 409
+        width: 397
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7903eabb174624c985702f4bc0ff6c
+      internalID: 1324855209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_6
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 398
+        width: 418
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0ad1febb2e3cc4fbff0eb59c943757
+      internalID: -380040089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_7
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 409
+        width: 395
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddffb5ed1744d349a895e81971ee29a
+      internalID: -1851815178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 370
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e232f345b542f4aadac4968011f6b0
+      internalID: -8876126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 12
+        width: 354
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a07a83588842045964c2116bc7e4a9
+      internalID: -246975751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_10
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 12
+        width: 367
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1026276021d38cd4c9fbaa691b2f8a84
+      internalID: -192813838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __orange_cartoon_fish_01_swim_11
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 12
+        width: 392
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7879768922c7d49bd04f1b1e9fcd6a
+      internalID: 596252864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __orange_cartoon_fish_01_swim_0: -471960619
+      __orange_cartoon_fish_01_swim_1: -833946057
+      __orange_cartoon_fish_01_swim_10: -192813838
+      __orange_cartoon_fish_01_swim_11: 596252864
+      __orange_cartoon_fish_01_swim_2: 1284805937
+      __orange_cartoon_fish_01_swim_3: -474323885
+      __orange_cartoon_fish_01_swim_4: -1611251656
+      __orange_cartoon_fish_01_swim_5: 1324855209
+      __orange_cartoon_fish_01_swim_6: -380040089
+      __orange_cartoon_fish_01_swim_7: -1851815178
+      __orange_cartoon_fish_01_swim_8: -8876126
+      __orange_cartoon_fish_01_swim_9: -246975751
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
