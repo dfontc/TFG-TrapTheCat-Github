@@ -9,6 +9,7 @@ public class CowScript : MonoBehaviour
     public int Cow;
     public bool isPowerUp;
     public GameObject canvasTimer;
+    public AudioClip Sound;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,6 +19,7 @@ public class CowScript : MonoBehaviour
         {
             isPowerUp = true;
             canvasTimer.SetActive(true);
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
             barraDeVida = FindObjectOfType<BarraDeVida>();
             if (barraDeVida.vidaActual <= (100-Cow))
             {
